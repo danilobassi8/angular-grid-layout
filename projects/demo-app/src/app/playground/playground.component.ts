@@ -24,7 +24,6 @@ function randomRgbColor(): string {
 }
 
 @Component({
-    standalone: true,
     selector: 'ktd-playground',
     templateUrl: './playground.component.html',
     styleUrls: ['./playground.component.scss'],
