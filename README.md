@@ -1,8 +1,10 @@
 # Angular Grid Layout
-[![npm](https://img.shields.io/npm/v/@katoid/angular-grid-layout?style=flat-square)](https://www.npmjs.com/package/@katoid/angular-grid-layout)
+
+ **This is an unofficial fork of [@katoid/angular-grid-layout](https://github.com/katoid/angular-grid-layout).**
+> I needed some fixes and my PRs weren't being merged in time, so I decided to create this fork with Angular version updates and a few additional improvements.
+> Full credit goes to the original author [@katoid](https://github.com/katoid) — if the original repo resumes activity, consider using that one instead.
+
 [![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square)](https://github.com/katoid/angular-grid-layout/blob/main/LICENSE.md)
-[![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](https://github.com/katoid/angular-grid-layout/commits/main)
-[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/katoid/angular-grid-layout/compare)
 
 Angular Grid Layout is a grid layout system with draggable and resizable items for Angular Applications. It is mainly designed to create highly customizable dashboards.
 
@@ -222,7 +224,7 @@ startDragManually(startEvent: MouseEvent | TouchEvent);
 - [ ] Add all other resize options (now is only available 'se-resize').
 - [ ] Documentation.
 
-**IMPORTANT**: These features would be done in the near future. If any lib user needs them earlier, we encourage you to contribute to this project and speed up the process! To do so, please: 
+**IMPORTANT**: These features would be done in the near future. If any lib user needs them earlier, we encourage you to contribute to this project and speed up the process! To do so, please:
 
 1. Open an issue mentioning one of these features.
 2. Explain your thoughts on how to implement it & we will discuss the possible solutions.
