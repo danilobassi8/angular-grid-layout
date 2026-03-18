@@ -2,21 +2,22 @@
 @use 'sass:map';
 
 @mixin cssVariables($theme) {
-    $is-dark-theme: map.get($theme, is-dark);
-    $primary: map.get($theme, primary);
-    $accent: map.get($theme, accent);
-    $warn: map.get($theme, warn);
-    $background: map.get($theme, background);
-    $foreground: map.get($theme, foreground);
+    $is-dark-theme: mat.get-theme-type($theme) == dark;
+    $color-config: mat.m2-get-color-config($theme);
+    $primary: map.get($color-config, primary);
+    $accent: map.get($color-config, accent);
+    $warn: map.get($color-config, warn);
+    $background: map.get($color-config, background);
+    $foreground: map.get($color-config, foreground);
 
 
-    --ktd-color-primary: #{mat.get-color-from-palette($primary, default)};
-    --ktd-color-primary-rgb: #{red(mat.get-color-from-palette($primary, default)), green(mat.get-color-from-palette($primary, default)), blue(mat.get-color-from-palette($primary, default))};
-    --ktd-color-primary-contrast:  #{mat.get-color-from-palette($primary, default-contrast)};
+    --ktd-color-primary: #{mat.m2-get-color-from-palette($primary, default)};
+    --ktd-color-primary-rgb: #{red(mat.m2-get-color-from-palette($primary, default)), green(mat.m2-get-color-from-palette($primary, default)), blue(mat.m2-get-color-from-palette($primary, default))};
+    --ktd-color-primary-contrast:  #{mat.m2-get-color-from-palette($primary, default-contrast)};
 
-    --ktd-color-accent: #{mat.get-color-from-palette($accent, default)};
-    --ktd-color-accent-rgb: #{red(mat.get-color-from-palette($accent, default)), green(mat.get-color-from-palette($accent, default)), blue(mat.get-color-from-palette($accent, default))};
-    --ktd-color-accent-contrast: #{mat.get-color-from-palette($accent, default-contrast)};
+    --ktd-color-accent: #{mat.m2-get-color-from-palette($accent, default)};
+    --ktd-color-accent-rgb: #{red(mat.m2-get-color-from-palette($accent, default)), green(mat.m2-get-color-from-palette($accent, default)), blue(mat.m2-get-color-from-palette($accent, default))};
+    --ktd-color-accent-contrast: #{mat.m2-get-color-from-palette($accent, default-contrast)};
 
     // Background & foreground (as background contrast)
     --ktd-background-color: #121212;
