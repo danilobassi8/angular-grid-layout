@@ -18,7 +18,7 @@ const rootDirectory = path.resolve(__dirname, '..');
 const filePath = path.join(rootDirectory, fileRelPath);
 const copyToPath = path.join(rootDirectory, copyToRelPath);
 
-const newDirPath = copyToPath.split('\\').slice(0, -1).join('\\');
+const newDirPath = path.dirname(copyToPath);
 
 fs.mkdirSync(newDirPath, { recursive: true });
 
